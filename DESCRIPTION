@@ -1,0 +1,15 @@
+Package: AFNC
+Version: 1.0
+Date: 2016-03-09
+Title: Adaptive False Negative Control (AFNC)
+Type: Package
+Author: Z. John Daye and X. Jessie Jeng
+Maintainer: Z. John Daye <zhongyindaye@gmail.com>
+Depends: R (>= 3.1.1)
+Description: Performs the adaptive false negative control (AFNC), as descripted in Jeng et al. (2016).  The AFNC can provide informative analysis of very high-dimensional datasets with weak signals, such as in the analysis of large-scale sequencing studies at the single locus level, by including a large proportion of signals with high confidence.  The proportion of signals is estimated adaptively from the data.
+License: GPLv3
+URL: http://sites.google.com/site/zhongyindaye/software/
+Packaged: 2016-03-09 19:04:05 UTC; John
+NeedsCompilation: yes
+Repository: GitHub
+RoxygenNote: 5.0.1
