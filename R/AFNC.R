@@ -136,10 +136,6 @@ AFNC = function(p.value, alpha=0.05, beta=0.1, cd, c0=NULL) {
 #'
 #'  Hauck, W.W. and Donner, A. (1977) Wald's test as applied to hypotheses in logit analysis. {J Am Stat Assoc}, 72, 851-853.
 #' @examples
-#' # Load "AFNC" library and example data.
-#' library("AFNC")
-#' data(example_data)
-#'
 #' # Simulate response and predictors
 #' set.seed(1); d = 10000; n = 2000
 #' X = array(rnorm(n*d),c(n,d))
