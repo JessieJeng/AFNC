@@ -41,7 +41,7 @@ where FN(j) is the number of causal variables (SNPs) missed by selecting the top
 Users pre-specify the parameters *\alpha* and *\beta*, where *\alpha* is the level of family-wise error rate for false positive control using the Bonferroni and *\beta* is the level of signal missing rate for false negative control using the AFNC.  Smaller value of *\beta* corresponds to more stringent control on false negatives.  Given *\alpha* and *\beta*, the algorithm implemented in this package is as follows. (See Jeng et al. (2016) for further details.)  
 
   1. Perform association tests and obtain ordered p-values from the test statistics, such that the p-values are ordered at decreasing significance, using the **association.test** function.  
-  2. The signal proportion estimator $\hat{\pi}$ and estimated number of signals *\hat{s} = \hat{\pi} * d* are obtained using the **estimate.signal.proportion** function.
+  2. The signal proportion estimator *\hat{\pi}* and estimated number of signals *\hat{s} = \hat{\pi} * d* are obtained using the **estimate.signal.proportion** function.
   3. Two cutoff positions, *t_\alpha* and *T_{fn}*, are determined to separate the Signal, Indistinguishable, and Noise regions using the **AFNC** function. (See Figure 1 of Jeng et al. (2016) for illustration of the Signal, Indistinguishable, and Noise regions of inference.)
   4. Finally, variables (SNPs) with ordered p-values ranked at or before *t_\alpha* are selected by Bonferroni for family-wise false positive control. Variables (SNPs) with ordered p-values ranked at or before *T_{fn}* are selected by the AFNC procedure for adaptive false negative control using the **AFNC** function.
 
